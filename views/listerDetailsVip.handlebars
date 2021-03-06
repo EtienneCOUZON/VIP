@@ -1,0 +1,16 @@
+Cliquez sur une lettre:
+{{#each listeLettre}}
+
+  <a href="/repertoire/{{this.FIRSTLETTER}}">  {{this.FIRSTLETTER}}</a>
+
+{{/each}}
+<div class="info_vip">
+<h4> Nom : </h1>{{detailsvip.Prenom_star}}{{detailsvip.Nom_star}}<p><img src="/images/vip/{{detailsvip.Photo_star}}"/></p>
+<p> <h4>Date de naissance : </h4> {{detailsvip.Naissance_star}}</p>
+<p> <h4>Qui suis je : </h4> {{detailsvip.Texte_star}}</p>
+<p> <h4>Mariage : </h4> {{MariageVip.Mariage_Lieu}}</p><p>{{MariageVip.Mariage_Debut}}</p><p>{{MariageVip.Mariage_Fin}}</p><p>{{MariageVip.Prenom_Star}}</p><p>{{MariageVip.Nom_Star}}</p>
+<p> <h4>Nationalite : </h4> {{NationaliteVip.Nationalite_star}}</p>
+
+</div>
+<img src="/images/vip/{{PhotoVip.Photo}}"/>
+

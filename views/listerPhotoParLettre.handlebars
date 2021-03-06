@@ -1,0 +1,19 @@
+<center>
+<h2>
+Cliquez sur une lettre:
+</h2>
+{{#each listeLettre}}
+
+  <a href="{{this.FIRSTLETTER}}">  {{this.FIRSTLETTER}}</a>
+
+{{/each}}
+</center>
+{{#each data}}
+<div class="photo_Star">
+  <img src="/images/vip/{{this.Photo_star}}"/>
+<p>  <a  href="/repertoire/DetailsVip/{{this.Num_star}}">    {{this.Prenom_star}}   {{this.Nom_star}}
+</a>
+</p>
+</div>
+
+{{/each}}
